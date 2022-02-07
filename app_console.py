@@ -199,6 +199,10 @@ class VaultApp:
             print("Press enter to continue.")
             input("")
 
+        except NoResultFound:
+            print("")
+            print("No app was found with that name!")
+            input("")
         except TypeError as error:
             print(error)
             input("")
